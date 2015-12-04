@@ -1,0 +1,24 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+@import 'sidebar.css';
+@import 'navbar.css';
+
+#article-wrapper{
+	padding-top: 20px;
+	width: 900px;
+	margin:0 auto;
+	border-style:solid;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:50px;
+}
+
+#article-photo-wrapper{
+	float: left;
+	margin: 0 0 10px 10px;
+}
+
+#article-body{
+	text-align: justify;
+
+}
