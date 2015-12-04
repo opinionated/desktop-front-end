@@ -16,10 +16,22 @@ $(document).ready(function() {
 									'<p class="description">' + article.article.description + '</p>' +
 									'<p>' + article.article.body + '</p>'
 		);
+		populateSidebar(article.article.similarArticles);
 	});
+
 
 });
 
+function populateSidebar(files){
+	for(var i=0; i<files.length; i++){
+		pullFile("../resources/exJson/" + files[i], function(Article){
+			$("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
+								                		'<a href="article_page.html?article='+Article.article.file+'">'+ Article.article.title +'</a>' +
+													'</li>'
+			);
+		});
+	}
+}
 function pullFile(path, cb) {
 	$.getJSON( path , function( data ) {
 		cb(data);
@@ -27,32 +39,22 @@ function pullFile(path, cb) {
 }
 
 function parseQuery(search) {
-
     var args = search.substring(1).split('&');
-
     var argsParsed = {};
-
     var i, arg, kvp, key, value;
 
     for (i=0; i < args.length; i++) {
-
         arg = args[i];
 
         if (-1 === arg.indexOf('=')) {
-
             argsParsed[decodeURIComponent(arg).trim()] = true;
         }
         else {
-
             kvp = arg.split('=');
-
             key = decodeURIComponent(kvp[0]).trim();
-
             value = decodeURIComponent(kvp[1]).trim();
-
             argsParsed[key] = value;
         }
     }
-
     return argsParsed;
 }

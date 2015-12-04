@@ -30,11 +30,6 @@ $(document).ready(function() {
 				);
 		    });
 		}
-		$('div .miniPArticle').click(function () {
-				console.log("fuck");
-        		window.location = $(this).find("a:first").attr("href");
-		        return false;
-    		});
 		//handle opinion articles
 		for (var i = 0; i < data.articles.opinion.length; i++) {
 		    pullFile("resources/exJson/" + data.articles.opinion[i], function(Article){
