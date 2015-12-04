@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	pullFile("../resources/exJson/" + article_name, function(article){
 		console.log(article);
-		$('#article-photo').append('<img src="../resources/images/' + article.article.image + '">');
+		$('#article-photo').append('<img src="' + article.article.image + '">');
 		$('#article-photo-caption').append(article.article.imageCaption);
 
 		$('#article-body').append('<h2>'+ article.article.title +'</h2>' +
