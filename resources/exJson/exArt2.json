@@ -7,6 +7,8 @@
 			"link"			: "fuqqboi.com",
 			"image"			: "",
 			"imageCaption"	: "",
-			"body"			: "adsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsf"
-	}
+			"body"			: "adsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsf",
+			"file"			: "exArt2.json",
+			"similarArticles" : ["exArt1.json","exArticle.json","exArt3.json"]
+		}
 }

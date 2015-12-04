@@ -19,36 +19,47 @@ $(document).ready(function() {
 		//handle politics articles
 		for (var i = 0; i < data.articles.politics.length; i++) {
 		    pullFile("resources/exJson/" + data.articles.politics[i], function(Article){
-		    	$('div .pcolumn').append('<div class="miniPArticle">' +
+		    	$('div .pcolumn').append('<a href="html/article_page.html?article='+ Article.article.file +'">' +
+		    								'<div class="miniPArticle">' + 
 											'<h3>' + Article.article.title + '</h3>' +
 											'<p class="author">' + Article.article.author + '</p>' +
 											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="50px">' +
 											'<p>' + Article.article.description + '</p>' +
-										'</div>'
+											'</div>' +
+										'</a>' 
 				);
 		    });
 		}
+		$('div .miniPArticle').click(function () {
+				console.log("fuck");
+        		window.location = $(this).find("a:first").attr("href");
+		        return false;
+    		});
 		//handle opinion articles
 		for (var i = 0; i < data.articles.opinion.length; i++) {
 		    pullFile("resources/exJson/" + data.articles.opinion[i], function(Article){
-		    	$('div .ocolumn').append('<div class="miniOArticle">' +
+		    	$('div .ocolumn').append('<a href="html/article_page.html?article='+ Article.article.file +'">' +
+		    								'<div class="miniOArticle">' +
 											'<h3>' + Article.article.title + '</h3>' +
 											'<p class="author">' + Article.article.author + '</p>' +
 											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="100px">' +
 											'<p>' + Article.article.description + '</p>' +
-										'</div>'
+											'</div>' + 
+										'</a>'
 				);
 		    });
 		}
 		//handle sports articles
 		for (var i = 0; i < data.articles.opinion.length; i++) {
 		    pullFile("resources/exJson/" + data.articles.opinion[i], function(Article){
-		    	$('div .scolumn').append('<div class="miniSArticle">' +
+		    	$('div .scolumn').append('<a href="html/article_page.html?article='+ Article.article.file +'">' +
+											'<div class="miniSArticle">' +
 											'<h3>' + Article.article.title + '</h3>' +
 											'<p class="author">' + Article.article.author + '</p>' +
 											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="50px">' +
 											'<p>' + Article.article.description + '</p>' +
-										'</div>'
+											'</div>' + 
+										'</a>'
 				);
 		    });
 		}

@@ -7,6 +7,8 @@
 			"link"			: "fuqqboi.com",
 			"image"			: "http://viralswarm.s3.amazonaws.com/wp-content/uploads/2014/11/AYch4Io.jpg",
 			"imageCaption"	: "A thing happened -yo mama",
-			"body"			: "adsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsf"
+			"body"			: "adsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsf",
+			"file"			: "exArt3.json",
+			"similarArticles" : ["exArt1.json","exArt2.json","exArticle.json"]
 	}
 }
