@@ -65,10 +65,13 @@ h3 {
 
 }
 
+.miniPArticle, .miniOArticle, .miniSArticle {
+    overflow:hidden;
+}
+
 .miniPArticle {
 	width: 290px;
     border-bottom: 1px solid #d6d6d6;
-
 }
 .miniOArticle {
 	width: 340px;
@@ -91,6 +94,11 @@ h3 {
 }
 
 .bigThumb {
+    float: right;
+    margin: 5px;
+}
+
+.miniThumb {
     float: right;
     margin: 5px;
 }
