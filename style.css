@@ -4,6 +4,11 @@
 
 
 
+
+
+
+
+
 .vertical-text {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -19,7 +24,7 @@
 
 }
 
-
+/*Sidebar button*/
 .sidebar-button-text {
 
     width: 100%;
@@ -47,7 +52,7 @@
 
 
 
-/*quick css sidebar*/
+/*Sidebar/Wrapper description*/
 #wrapper {
     padding-right: 0;
     -webkit-transition: all 0.5s ease;
