@@ -28,11 +28,15 @@
 
 #header {
 	position: fixed;
-	width: 100%;
+	width: 900px;
+	margin-left: auto;
+    margin-right: auto;
     top: 0px;
+    left: 0px;
+    right: 0px;
     z-index: 1;
 	text-align: center;
 	font-family: Georgia;
 	background: white;
-	border-bottom-style: double; 
+	border-bottom-style: double;
 }
