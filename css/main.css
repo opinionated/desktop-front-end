@@ -1,0 +1,81 @@
+/*main.css*/
+#mBody {
+	width: 900px;
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #000;
+}
+
+.leftColumns {
+    float: left;
+	width: 650px;
+    border-left: 1px solid #d6d6d6;
+
+}
+
+.bigArticle {
+    padding: 5px;
+	width: 650px;
+    border-bottom: 1px solid #d6d6d6;
+
+}
+
+.pcolumn {
+    float: left;
+    position: relative;
+    width: 299px;
+  
+    /*for demo purposes only */
+    /*background: #f1f1f1;*/
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+.ocolumn {
+    float: left;
+    position: relative;
+    width: 350px;
+  
+    /*for demo purposes only */
+    /*background: #f5f5f5;*/
+    padding: 5px;
+    border-left: 1px solid #d6d6d6;
+    /*border-right: 1px solid #d6d6d6;*/
+    box-sizing: border-box;
+
+}
+
+.scolumn {
+    float: right;
+    position: relative;
+    width: 250px;
+  
+    /*for demo purposes only */
+    /*background: #f3f3f3;*/
+    padding: 5px;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    box-sizing: border-box;
+
+}
+
+.miniPArticle {
+	width: 290px;
+    border-bottom: 1px solid #d6d6d6;
+
+}
+.miniOArticle {
+	width: 340px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.miniSArticle {
+	width: 240px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.author {
+	font-size: 12px;
+}

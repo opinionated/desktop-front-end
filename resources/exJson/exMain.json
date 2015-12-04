@@ -1,14 +1,35 @@
 {
 	"articles": { 
-		"main" : "exArticle.json",
+		"main" : "exArt1.json",
 		"politics" :[
-			"exArticle.json"
+			"exArticle.json",
+			"exArt2.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json"
 		],
 		"opinion" :[
-			"exArticle.json"
+			"exArt2.json",
+			"exArticle.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json"
 		],
 		"sports" :[
-			"exArticle.json"
+			"exArticle.json",
+			"exArt3.json",
+			"exArt2.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json",
+			"exArt3.json"
 		]
 	}
 }
