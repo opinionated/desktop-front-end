@@ -4,11 +4,13 @@
 @import 'navbar.css';
 
 #article-wrapper{
-	padding-top: 100px;
+	padding-top: 20px;
 	width: 900px;
-	height: 100%;
 	margin:0 auto;
 	border-style:solid;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:50px;
 }
 
 #article-photo-wrapper{
@@ -17,10 +19,6 @@
 }
 
 #article-body{
-	white-space: pre-wrap;      /* CSS3 */   
-   	white-space: -moz-pre-wrap; /* Firefox */    
-   	white-space: -pre-wrap;     /* Opera <7 */   
-   	white-space: -o-pre-wrap;   /* Opera 7 */
-   	word-wrap: break-word;      /* IE */
+	text-align: justify;
 
 }
