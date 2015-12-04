@@ -40,3 +40,17 @@
 	background: white;
 	border-bottom-style: double;
 }
+
+a {
+color: #000000;
+}
+
+a:link {
+color: #000000;
+}
+a:visited {
+color: #000000;
+}
+a:hover {
+color: #000000;
+}
