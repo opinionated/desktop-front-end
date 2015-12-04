@@ -68,6 +68,7 @@
 
 
 #sidebar-wrapper {
+
     position: fixed;
     right: 250;
     width: 0;
