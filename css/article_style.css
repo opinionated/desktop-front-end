@@ -4,18 +4,23 @@
 @import 'navbar.css';
 
 #article-wrapper{
+	padding-top: 100px;
 	width: 900px;
 	height: 100%;
 	margin:0 auto;
 	border-style:solid;
 }
 
-img{
+#article-photo-wrapper{
 	float: left;
 	margin: 0 0 10px 10px;
 }
 
 #article-body{
-	position:absolute;
+	white-space: pre-wrap;      /* CSS3 */   
+   	white-space: -moz-pre-wrap; /* Firefox */    
+   	white-space: -pre-wrap;     /* Opera <7 */   
+   	white-space: -o-pre-wrap;   /* Opera 7 */
+   	word-wrap: break-word;      /* IE */
 
 }
