@@ -1,0 +1,16 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+@import 'sidebar.css';
+
+#article_wrapper{
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	margin:0 auto;
+	border:10px;
+	border-style:solid;
+}
+
+#article_body{
+
+}
