@@ -2,6 +2,7 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 @import 'sidebar.css';
 @import 'navbar.css';
+@import 'footer.css';
 
 #article-wrapper{
 	padding-top: 160px;
