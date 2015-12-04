@@ -48,7 +48,7 @@
 
 /*Sidebar/Wrapper description*/
 #wrapper {
-    padding-top:117px;
+    padding-top:0px;
     padding-right: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -62,7 +62,7 @@
 
 
 #sidebar-wrapper {
-    z-index: 1000;
+    z-index: 0;
     position: fixed;
     right: 250;
     width: 0;
