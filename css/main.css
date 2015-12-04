@@ -63,13 +63,17 @@
 }
 
 .miniPArticle {
-	width: 299px;
+	width: 290px;
+    border-bottom: 1px solid #d6d6d6;
+
 }
 .miniOArticle {
-	width: 350px;
+	width: 340px;
+    border-bottom: 1px solid #d6d6d6;
 }
 .miniSArticle {
-	width: 250px;
+	width: 240px;
+    border-bottom: 1px solid #d6d6d6;
 }
 
 .author {
