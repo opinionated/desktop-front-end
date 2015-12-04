@@ -41,18 +41,18 @@
 	border-bottom-style: double;
 }
 
-a {
+#outerHead a {
 color: #000000;
 }
 
-a:link {
+#outerHead a:link {
 color: #000000;
 }
 
-a:visited {
+#outerHead a:visited {
 color: #000000;
 }
 
-a:hover {
+#outerHead a:hover {
 color: #000000;
 }
