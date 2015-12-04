@@ -3,8 +3,12 @@
 @import 'sidebar.css';
 
 #article_wrapper{
-	width: 50%;
-	margin: auto;
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	margin:0 auto;
+	border:10px;
+	border-style:solid;
 }
 
 #article_body{
