@@ -1,12 +1,6 @@
 /*MAIN STYLESHEET*/
 @import url('http://getbootstrap.com/dist/css/bootstrap.css');
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
-
-
-
-
-
-
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 
 .vertical-text {
