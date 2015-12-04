@@ -9,8 +9,12 @@ $(document).ready(function() {
 										'<p class="author">' + mainArticle.article.imageCaption + '</p></div>' +
 										'<h2>'+ mainArticle.article.title +'</h2>' +
 										'<p class="author">' + mainArticle.article.author + '</p>' +
-										'<p>' + mainArticle.article.description + '</p>'
-			);
+										'<p>' + mainArticle.article.description + '</p>' + 
+										'<a href="html/article_page.html?article='+ data.articles.main +'"></a>'
+			).click(function () {
+        		window.location = $(this).find("a:first").attr("href");
+		        return false;
+    		});
 		});
 		//handle politics articles
 		for (var i = 0; i < data.articles.politics.length; i++) {
@@ -18,6 +22,7 @@ $(document).ready(function() {
 		    	$('div .pcolumn').append('<div class="miniPArticle">' +
 											'<h3>' + Article.article.title + '</h3>' +
 											'<p class="author">' + Article.article.author + '</p>' +
+											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="50px">' +
 											'<p>' + Article.article.description + '</p>' +
 										'</div>'
 				);
@@ -29,6 +34,7 @@ $(document).ready(function() {
 		    	$('div .ocolumn').append('<div class="miniOArticle">' +
 											'<h3>' + Article.article.title + '</h3>' +
 											'<p class="author">' + Article.article.author + '</p>' +
+											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="100px">' +
 											'<p>' + Article.article.description + '</p>' +
 										'</div>'
 				);
@@ -40,6 +46,7 @@ $(document).ready(function() {
 		    	$('div .scolumn').append('<div class="miniSArticle">' +
 											'<h3>' + Article.article.title + '</h3>' +
 											'<p class="author">' + Article.article.author + '</p>' +
+											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="50px">' +
 											'<p>' + Article.article.description + '</p>' +
 										'</div>'
 				);

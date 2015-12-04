@@ -5,7 +5,8 @@
 			"author"		: "BOB goddamn fuckin DYLAN",
 			"date"			: "YYYY-MM-DD",
 			"link"			: "fuqqboi.com",
-			"image"			: "blah.gif",
+			"image"			: "",
+			"imageCaption"	: "",
 			"body"			: "adsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsf"
 	}
 }

@@ -5,7 +5,8 @@
 			"author"		: "BOB DYLAN",
 			"date"			: "YYYY-MM-DD",
 			"link"			: "fuqqboi.com",
-			"image"			: "blah.gif",
+			"image"			: "http://viralswarm.s3.amazonaws.com/wp-content/uploads/2014/11/AYch4Io.jpg",
+			"imageCaption"	: "A thing happened -yo mama",
 			"body"			: "adsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsf"
 	}
 }
