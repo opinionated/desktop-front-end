@@ -1,4 +1,7 @@
 /*main.css*/
+h3 {
+    margin-top: 0px;
+}
 #mBody {
 	width: 900px;
     margin-left: auto ;
@@ -78,4 +81,16 @@
 
 .author {
 	font-size: 12px;
+    /*float: left;*/
+}
+.description {
+    /*float: left;*/
+}
+.caption {
+    float: right;
+}
+
+.bigThumb {
+    float: right;
+    margin: 5px;
 }

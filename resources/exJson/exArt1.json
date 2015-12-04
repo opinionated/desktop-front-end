@@ -5,7 +5,8 @@
 			"author"		: "BOB fucking DYLAN",
 			"date"			: "YYYY-MM-DD",
 			"link"			: "fuqqboi.com",
-			"image"			: "blah.gif",
+			"image"			: "http://static01.nyt.com/images/2015/12/04/us/20151104_BERNARDINO_HP-slide-M0KO/20151104_BERNARDINO_HP-slide-M0KO-largeHorizontal375.jpg",
+			"imageCaption"	: "A thing happened -yo mama",
 			"body"			: "adsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsf"
 	}
 }

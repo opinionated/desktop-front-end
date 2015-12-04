@@ -5,10 +5,11 @@ $(document).ready(function() {
 		//handle main article
 		pullFile("resources/exJson/" + data.articles.main, function(mainArticle){
 			console.log(mainArticle);
-			$('div .bigArticle').append('<h2>'+ mainArticle.article.title +'</h2>' +
+			$('div .bigArticle').append('<div class="bigThumb"><img src="'+ mainArticle.article.image +'" alt="" height="140px">' +
+										'<p class="author">' + mainArticle.article.imageCaption + '</p></div>' +
+										'<h2>'+ mainArticle.article.title +'</h2>' +
 										'<p class="author">' + mainArticle.article.author + '</p>' +
-										'<p>' + mainArticle.article.description + '</p>' +
-										'<img src="" alt="">'
+										'<p>' + mainArticle.article.description + '</p>'
 			);
 		});
 		//handle politics articles
