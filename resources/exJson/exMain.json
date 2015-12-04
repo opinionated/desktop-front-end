@@ -1,0 +1,14 @@
+{
+	"articles": { 
+		"main" : "exArticle.json",
+		"politics" :[
+			"exArticle.json"
+		],
+		"opinion" :[
+			"exArticle.json"
+		],
+		"sports" :[
+			"exArticle.json"
+		]
+	}
+}
