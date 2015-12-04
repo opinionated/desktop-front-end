@@ -67,7 +67,7 @@
 
 
 #sidebar-wrapper {
-    z-index: 0;
+    z-index: 200;
     position: fixed;
     right: 250;
     width: 0;
