@@ -18,7 +18,7 @@ $(document).ready(function() {
 		if (article.article.template == "left" || article.article.template == "right") {
 			$('#article-photo').append('<img src="' + article.article.image + '" style="width:400px">');
 		} else if (article.article.template == "top") {
-			$('#article-photo').append('<img src="' + article.article.image + '" style="width:900px">');
+			$('#article-photo').append('<img src="' + article.article.image + '" style="width:700px">');
 		}
 
 		$('#article-photo-caption').append(article.article.imageCaption);
