@@ -47,7 +47,7 @@ function populateSidebar(files, root){
 	for(var i=0; i<files.length; i++){
 		pullFile("../resources/exJson/" + files[i], function(Article){
 			$("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
-														'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="25px">' +
+														'<img class="sidebarThumb" src="'+ Article.article.image +'" alt="" height="35px" width="35px">' +
 								                		'<a href="related_article_page.html?article='+Article.article.file+'&main_article=' + root + '">'+ Article.article.title +'</a>' +
 													'</li>'
 			);
