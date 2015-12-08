@@ -7,13 +7,12 @@ $(document).ready(function() {
 
 	pullFile("../resources/exJson/" + article_name, function(article){
 		if (article.article.template == 'top') {
-			$('#article-photo').append('<img src="' + article.article.image + '" style="margin-left: 0px; position: relative; left: 50%; right:50%;"><br>');
-			$('#article-photo-caption').append(article.article.imageCaption);
-			$('#article-photo-caption').css("clear", "both");
-			$('#article-body').append('<h2 style="clear:both;">'+ article.article.title +'</h2>' +
+			$('#article-header').append('<h2 style="clear:both;">'+ article.article.title +'</h2>' +
 									'<p class="author">' + article.article.author + '</p>' +
-									'<p class="date">' + article.article.date + '</p>' +
-									'<p class="description">' + article.article.description + '</p>' +
+									'<p class="date">' + article.article.date + '</p>')
+			$('#article-photo').append('<img src="' + article.article.image + '">');
+			$('#article-photo-caption').append(article.article.imageCaption);
+			$('#article-body').append('<p class="description">' + article.article.description + '</p>' +
 									'<p>' + article.article.body + '</p>'
 			);
 		}
@@ -30,6 +29,7 @@ $(document).ready(function() {
 			);
 			$('#article-photo-wrapper').addClass("left-template");
 		}
+
 		if (article.article.template == "right") {
 			$('#article-header').append('<h2 style="clear:both;">'+ article.article.title +'</h2>' +
 									'<p class="author">' + article.article.author + '</p>' +

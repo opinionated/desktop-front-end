@@ -14,15 +14,16 @@
 }
 
 #article-photo-wrapper{
-	padding: 20px;
-	padding-right:30px;
+	
 }
 
 .right-template{
+	padding-left:30px;
 	float: right;
 }
 
 .left-template{
+	padding-right:30px;
 	float: left;
 }
 
