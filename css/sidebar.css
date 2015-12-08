@@ -3,9 +3,9 @@
 @import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 
-.similarThumb {
+.sidebarThumb {
     float: left;
-    margin: 2px;
+    margin: 10px;
 }
 
 .vertical-text {
@@ -115,18 +115,15 @@
     margin: 0;
     padding: 0;
     list-style: none;
-}
 
-.sidebar-nav {
     text-indent: 20px;
     line-height: 40px;
-}
 
-.sidebar-nav{
     display: block;
     text-decoration: none;
     color: black;
 }
+
 .sidebar-stub {
     color:black;
 }
