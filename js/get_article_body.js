@@ -6,7 +6,6 @@ $(document).ready(function() {
 	var article_name = query["article"];
 
 	pullFile("../resources/exJson/" + article_name, function(article){
-		// console.log(article);
 		if (article.article.template == 'top') {
 			$('#article-photo').append('<img src="' + article.article.image + '" style="margin-left: 0px; position: relative; left: 50%; right:50%;"><br>');
 			$('#article-photo-caption').append(article.article.imageCaption);
@@ -19,18 +18,6 @@ $(document).ready(function() {
 									'<p>' + article.article.body + '</p>'
 			);
 		}
-
-
-
-		// $('#article-photo').append('<img src="' + article.article.image + '">');
-		// $('#article-photo-caption').append(article.article.imageCaption);
-
-		// $('#article-body').append('<h2>'+ article.article.title +'</h2>' +
-		// 							'<p class="author">' + article.article.author + '</p>' +
-		// 							'<p class="date">' + article.article.date + '</p>' +
-		// 							'<p class="description">' + article.article.description + '</p>' +
-		// 							'<p>' + article.article.body + '</p>'
-		// );
 		populateSidebar(article.article.similarArticles, article_name);
 	});
 
@@ -42,7 +29,7 @@ function populateSidebar(files, root){
 	for(var i=0; i<files.length; i++){
 		pullFile("../resources/exJson/" + files[i], function(Article){
 			$("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
-														'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="25px">' +
+														'<img class="sidebarThumb" src="'+ Article.article.image +'" alt="" height="50px" width="50px">' +
 								                		'<a href="related_article_page.html?article='+Article.article.file+'&main_article=' + root + '">'+ Article.article.title +'</a>' +
 													'</li>'
 			);
