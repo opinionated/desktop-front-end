@@ -3,6 +3,7 @@
 @import 'sidebar.css';
 @import 'navbar.css';
 @import 'footer.css';
+@import 'header_forArticles.css';
 
 #article-wrapper{
 	padding-top: 160px;
