@@ -31,6 +31,10 @@
 
 }
 
+#article-header{
+
+}
+
 #article-photo-caption{
 	font-size:12;
 }
@@ -42,7 +46,7 @@
 
 .author {
 	font-size: 12px;
-	float: right;
+	/*float: right;*/
 }
 
 .date{
