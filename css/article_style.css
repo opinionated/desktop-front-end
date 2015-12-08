@@ -27,6 +27,12 @@
 	float: left;
 }
 
+.top_template *{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
 
 #article-photo{
 

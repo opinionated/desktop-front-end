@@ -7,16 +7,33 @@ $(document).ready(function() {
 	var main_article = query["main_article"];
 
 	pullFile("../resources/exJson/" + article_name, function(article){
-		console.log(article);
-		$('#article-photo').append('<img src="' + article.article.image + '">');
-		$('#article-photo-caption').append(article.article.imageCaption);
+		$('#article-header').append('<h2>'+ article.article.title +'</h2>' +
+									'<p class="author">' + article.article.author  + " | " +
+ 									'<font color="grey">' + article.article.date + '</font>' + '</p>');
 
-		$('#article-body').append('<h2>'+ article.article.title +'</h2>' +
-									'<p class="author">' + article.article.author + '</p>' +
-									'<p class="date">' + article.article.date + '</p>' +
-									'<p class="description">' + article.article.description + '</p>' +
-									'<p>' + article.article.body + '</p>'
+		if (article.article.template == 'top') {
+			$('#article-photo-wrapper').addClass("top_template");
+		}
+
+		if (article.article.template == "left" || article.article.template == "right") {
+			$('#article-photo').append('<img src="' + article.article.image + '" style="width:400px">');
+		} else if (article.article.template == "top") {
+			$('#article-photo').append('<img src="' + article.article.image + '" style="width:900px">');
+		}
+
+		$('#article-photo-caption').append(article.article.imageCaption);
+		$('#article-body').append('<br><p class="description">' + article.article.description + '</p>' +
+								'<p>' + article.article.body + '</p>'
 		);
+
+
+		if(article.article.template == "right"){
+			$('#article-photo-wrapper').addClass("right-template");
+		}
+		if(article.article.template == "left"){
+			$('#article-photo-wrapper').addClass("left-template");
+		}
+		
 		populateSidebar(article.article.similarArticles, main_article);
 	});
 
