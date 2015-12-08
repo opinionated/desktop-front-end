@@ -15,7 +15,7 @@
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
 
-    -webkit-transform-origin: 1000% 1200%;
+    -webkit-transform-origin: 100% 100%;
     -moz-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
     -o-transform-origin: 100% 100%;
@@ -47,7 +47,7 @@
 }
 
 #sidebar_toggle_wrapper.toggled{
-    right: 250px;
+    right: 300px;
 }
 
 .menu_toggle{
@@ -65,31 +65,37 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+
 }
 
 #wrapper.toggled {
-    padding-right: 250px;
+    padding-right: 300px;
 }
 
 
 #sidebar-wrapper {
-
+    z-index:1;
     position: fixed;
-    right: 250;
+    right: 300;
     width: 0;
     height: 100%;
-    margin-right: -250px;
+    margin-right: -300px;
     overflow-y: auto;
     background: #000;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    border-left: solid;
+    border-size:1px;
+    border-color:rgba(220, 220, 220, 0.8);
+    background-color: rgba(169, 169, 169, 0.2);
+
 }
 
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 300px;
 }
 
 
@@ -98,8 +104,6 @@
 
 .main_link {
     border: solid;
-    background: rgba(255, 255, 255, .2);
-    color: #000000;
 
 }
 
@@ -107,7 +111,7 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 300px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -118,34 +122,47 @@
     line-height: 40px;
 }
 
-.sidebar-nav a {
+.sidebar-nav{
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: black;
+}
+.sidebar-stub {
+    color:black;
 }
 
-.sidebar-nav a:hover {
+.sidebar-stub:hover {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+    color: black;
+    background-color: #8f9ea6;
 }
 
-.sidebar-nav a:active,
-.sidebar-nav a:focus {
+.sidebar-stub:active, .sidebar-stub:focus a{
     text-decoration: none;
+    color:black;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav > .sidebar-stub a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-nav > .sidebar-brand a{
     height: 65px;
     font-size: 18px;
     line-height: 60px;
 }
 
-.sidebar-nav > .sidebar-brand a {
-    color: #999999;
+.sidebar-nav > .sidebar-brand a{
+    color: black;
 }
 
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
+.sidebar-nav > .sidebar-brand:hover a{
+    color: black;
+    background-color: none;
 }
+
+
+
+
+
