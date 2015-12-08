@@ -6,31 +6,16 @@ $(document).ready(function() {
 	var article_name = query["article"];
 
 	pullFile("../resources/exJson/" + article_name, function(article){
-		console.log(article);
-
-		// if ($('#article-template') == "top") {
-		// 	$('#article-photo').append('<img src="' + article.article.image + '">' + <br>);
-		// 	$('#article-photo-caption').append(article.article.imageCaption);
-
-		// 	$('#article-body').append('<h2>'+ article.article.title +'</h2>' +
-		// 							'<p class="author">' + article.article.author + '</p>' +
-		// 							'<p class="date">' + article.article.date + '</p>' +
-		// 							'<p class="description">' + article.article.description + '</p>' +
-		// 							'<p>' + article.article.body + '</p>'
-		// 	);
-		// }
-
-		if (article.article.template == "right") {
-			$('#article-photo').append('<img src="' + article.article.image + '">');
+		if (article.article.template == 'top') {
+			$('#article-photo').append('<img src="' + article.article.image + '" style="margin-left: 0px; position: relative; left: 50%; right:50%;"><br>');
 			$('#article-photo-caption').append(article.article.imageCaption);
-
-			$('#article-body').append('<h2>'+ article.article.title +'</h2>' +
+			$('#article-photo-caption').css("clear", "both");
+			$('#article-body').append('<h2 style="clear:both;">'+ article.article.title +'</h2>' +
 									'<p class="author">' + article.article.author + '</p>' +
 									'<p class="date">' + article.article.date + '</p>' +
 									'<p class="description">' + article.article.description + '</p>' +
 									'<p>' + article.article.body + '</p>'
 			);
-			$('#article-photo-wrapper').addClass("template-right");
 		}
 
 		if (article.article.template == "left") {
@@ -43,25 +28,24 @@ $(document).ready(function() {
 									'<p class="description">' + article.article.description + '</p>' +
 									'<p>' + article.article.body + '</p>'
 			);
-			$('#article-photo-wrapper').addClass("template-left");
+			$('#article-photo-wrapper').addClass("left-template");
+		}
+		if (article.article.template == "right") {
+			$('#article-photo').append('<img src="' + article.article.image + '">');
+			$('#article-photo-caption').append(article.article.imageCaption);
+
+			$('#article-body').append('<h2>'+ article.article.title +'</h2>' +
+									'<p class="author">' + article.article.author + '</p>' +
+									'<p class="date">' + article.article.date + '</p>' +
+									'<p class="description">' + article.article.description + '</p>' +
+									'<p>' + article.article.body + '</p>'
+			);
+			$('#article-photo-wrapper').addClass("right-template");
 		}
 
 
 
 
-
-
-
-		// $('#article-photo').append('<img src="' + article.article.image + '">');
-		// $('#article-photo-caption').append(article.article.imageCaption);
-
-		// $('#article-body').append('<h2>'+ article.article.title +'</h2>' +
-		// 							'<p class="author">' + article.article.author + '</p>' +
-		// 							'<p class="date">' + article.article.date + '</p>' +
-		// 							'<p class="description">' + article.article.description + '</p>' +
-		// 							'<p>' + article.article.body + '</p>'
-		// );
-		populateSidebar(article.article.similarArticles, article_name);
 	});
 
 
