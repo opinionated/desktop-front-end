@@ -4,8 +4,8 @@
 		"politics" :[
 			"exArticle.json",
 			"exArt2.json",
-			"exArt3.json",
-			"exArt3.json",
+			"exArt4.json",
+			"exArt5.json",
 			"exArt3.json",
 			"exArt3.json",
 			"exArt3.json",
@@ -14,8 +14,8 @@
 		"opinion" :[
 			"exArt2.json",
 			"exArticle.json",
-			"exArt3.json",
-			"exArt3.json",
+			"exArt5.json",
+			"exArt4.json",
 			"exArt3.json",
 			"exArt3.json",
 			"exArt3.json",
@@ -23,9 +23,9 @@
 		],
 		"sports" :[
 			"exArticle.json",
-			"exArt3.json",
+			"exArt4.json",
 			"exArt2.json",
-			"exArt3.json",
+			"exArt5.json",
 			"exArt3.json",
 			"exArt3.json",
 			"exArt3.json",
