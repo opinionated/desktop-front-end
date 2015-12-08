@@ -52,8 +52,11 @@ function populateSidebar(files, root){
 	for(var i=0; i<files.length; i++){
 		pullFile("../resources/exJson/" + files[i], function(Article){
 			$("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
-														'<img class="sidebarThumb" src="'+ Article.article.image +'" alt="" height="50px" width="50px">' +
-								                		'<a href="related_article_page.html?article='+Article.article.file+'&main_article=' + root + '">'+ Article.article.title +'</a>' +
+														'<img class="sidebarThumb" src="'+ Article.article.image +'" alt="" height="70px" width="70px">' +
+								                		'<a href="related_article_page.html?article='+Article.article.file+'&main_article=' + root + '">'+
+								                		'<div class="stubTitle">' + Article.article.title + '</div>' +
+								                		'<div class="stubAuthor">' + Article.article.date + '</div>' +
+								                		'</a>' +
 													'</li>'
 			);
 		});
