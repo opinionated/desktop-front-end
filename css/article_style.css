@@ -14,10 +14,18 @@
 }
 
 #article-photo-wrapper{
-	float: left;
 	padding: 20px;
 	padding-right:30px;
 }
+
+.right-template{
+	float: right;
+}
+
+.left-template{
+	float: left;
+}
+
 
 #article-photo{
 
