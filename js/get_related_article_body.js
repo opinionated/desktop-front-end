@@ -25,21 +25,23 @@ $(document).ready(function() {
 
 function populateSidebar(files, root){
 
-	pullFile("../resources/exJson/" + root, function(Article){
-			$(".mainArticle").append('<li class="sidebar-stub">' +
-														'<img class="sidebarThumb" src="'+ Article.article.image +'" alt="" height="70px" width="70px">' +
-								                		'<a href="article_page.html?article='+root+'">' +
-								                		'<div class="stubTitle">' + Article.article.title + '</div>' +
-								                		// '<div class="stubAuthor">' + Article.article.date + '</div>' +
-								                		'</a>' +
-													'</li>'
-		);
-	});
+	// pullFile("../resources/exJson/" + root, function(Article){
+	// 		$(".mainArticle").append('<li class="sidebar-stub">' +
+	// 													'<img class="sidebarThumb" src="'+ Article.article.image +'" alt="" height="70px" width="70px">' +
+	// 							                		'<a href="article_page.html?article='+root+'">' +
+	// 							                		'<div class="stubTitle">' + Article.article.title + '</div>' +
+	// 							                		// '<div class="stubAuthor">' + Article.article.date + '</div>' +
+	// 							                		'</a>' +
+	// 												'</li>'
+	// 	);
+	// });
+
+	$("#mainLink").attr("href", "article_page.html?article="+root);
 
 	for(var i=0; i<files.length; i++){
 		if(root == files[i]) continue;
 		pullFile("../resources/exJson/" + files[i], function(Article){
-			$("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
+			$("#sidebar-wrapper #related").append('<li class="sidebar-stub">' +
 														'<img class="sidebarThumb" src="'+ Article.article.image +'" alt="" height="70px" width="70px">' +
 								                		'<a href="related_article_page.html?article='+Article.article.file+'&main_article=' + root + '">'+
 								                		'<div class="stubTitle">' + Article.article.title + '</div>' +
