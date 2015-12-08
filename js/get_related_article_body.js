@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 	var query = parseQuery(document.location.search);
 	var article_name = query["article"];
+	var main_article = query["main_article"];
 
 	pullFile("../resources/exJson/" + article_name, function(article){
 		console.log(article);
@@ -16,7 +17,7 @@ $(document).ready(function() {
 									'<p class="description">' + article.article.description + '</p>' +
 									'<p>' + article.article.body + '</p>'
 		);
-		populateSidebar(article.article.similarArticles, article_name);
+		populateSidebar(article.article.similarArticles, main_article);
 	});
 
 
@@ -24,13 +25,22 @@ $(document).ready(function() {
 
 function populateSidebar(files, root){
 
-	for(var i=0; i<files.length; i++){
-		pullFile("../resources/exJson/" + files[i], function(Article){
-			$("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
-								                		'<a href="related_article_page.html?article='+Article.article.file+'&main_article=' + root + '">'+ Article.article.title +'</a>' +
+	pullFile("../resources/exJson/" + root, function(Article){
+			$("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub main_link">' +
+								                		'<a href="article_page.html?article='+root+'"><b>Main Article:</b> '+ Article.article.title +'</a>' +
 													'</li>'
-			);
-		});
+		);
+	});
+
+	for(var i=0; i<files.length; i++){
+		if(files[i] != root){
+			pullFile("../resources/exJson/" + files[i], function(Article){
+				$("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
+									                		'<a href="related_article_page.html?article='+Article.article.file+'&main_article=' + root + '">'+ Article.article.title +'</a>' +
+														'</li>'
+				);
+			});
+		}
 	}
 }
 function pullFile(path, cb) {

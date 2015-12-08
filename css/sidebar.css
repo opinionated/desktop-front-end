@@ -91,6 +91,14 @@
 
 /* Sidebar Styles */
 
+.main_link {
+    border: solid;
+    background: rgba(255, 255, 255, .2);
+    color: #000000;
+
+}
+
+
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -100,25 +108,25 @@
     list-style: none;
 }
 
-.sidebar-nav li {
+.sidebar-nav {
     text-indent: 20px;
     line-height: 40px;
 }
 
-.sidebar-nav li a {
+.sidebar-nav a {
     display: block;
     text-decoration: none;
     color: #999999;
 }
 
-.sidebar-nav li a:hover {
+.sidebar-nav a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
 }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav a:active,
+.sidebar-nav a:focus {
     text-decoration: none;
 }
 
