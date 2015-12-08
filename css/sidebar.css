@@ -33,8 +33,20 @@
 
 }
 
+#sidebar_toggle_wrapper > .btn{
+    background-color: #D8DBDF;
+    border:none;
+    -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+    border-right: solid;
+    border-color: #CACED3;
+}
+#sidebar_toggle_wrapper > .btn:hover{
+    background-color: #8f9ea6;
+}
+
 #sidebar_toggle_wrapper{
-    background-image: url("../resources/img/menuArrow.png");
     position: fixed;
     margin-top: 300px;
 	right: 0px;
@@ -86,10 +98,10 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    border-left: solid;
-    border-size:1px;
+    border-left: none;
+/*    border-size:1px;
     border-color:rgba(220, 220, 220, 0.8);
-    background-color: rgba(169, 169, 169, 0.2);
+*/    background-color: #F4F5F6;
 
 }
 
