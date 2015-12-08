@@ -45,9 +45,9 @@ $(document).ready(function() {
 
 
 
-
+		populateSidebar(article.article.similarArticles, article_name);
 	});
-
+	
 
 });
 
