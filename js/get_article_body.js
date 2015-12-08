@@ -18,7 +18,7 @@ $(document).ready(function() {
 		if (article.article.template == "left" || article.article.template == "right") {
 			$('#article-photo').append('<img src="' + article.article.image + '" style="width:400px">');
 		} else if (article.article.template == "top") {
-			$('#article-photo').append('<img src="' + article.article.image + '" style="width:900px">');
+			$('#article-photo').append('<img src="' + article.article.image + '" style="width:700px">');
 		}
 
 		$('#article-photo-caption').append(article.article.imageCaption);
@@ -49,8 +49,10 @@ function populateSidebar(files, root){
 														'<img class="sidebarThumb" src="'+ Article.article.image +'" alt="" height="70px" width="70px">' +
 								                		'<a href="related_article_page.html?article='+Article.article.file+'&main_article=' + root + '">'+
 								                		'<div class="stubTitle">' + Article.article.title + '</div>' +
+								                		'<div class="stubAuthor">' + Article.article.author + '</div>' +
 								                		'<div class="stubAuthor">' + Article.article.date + '</div>' +
 								                		'</a>' +
+								                		'<p class="stubDesc"><em>'+ Article.article.description +'</em></p>' +
 													'</li>'
 			);
 		});

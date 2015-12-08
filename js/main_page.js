@@ -8,7 +8,7 @@ $(document).ready(function() {
 			$('div .bigArticle').append('<div class="bigThumb"><img src="'+ mainArticle.article.image +'" alt="" height="140px">' +
 										'<p class="author">' + mainArticle.article.imageCaption + '</p></div>' +
 										'<h2>'+ mainArticle.article.title +'</h2>' +
-										'<p class="author">' + mainArticle.article.author + '</p>' +
+										'<p class="author">' + mainArticle.article.author +  " | " + '<font color="grey"> ' + mainArticle.article.date + '</font>' + '</p>' +
 										'<p>' + mainArticle.article.description + '</p>' + 
 										'<a href="html/article_page.html?article='+ data.articles.main +'"></a>'
 			).click(function () {
@@ -22,7 +22,8 @@ $(document).ready(function() {
 		    	$('div .pcolumn').append('<a href="html/article_page.html?article='+ Article.article.file +'">' +
 		    								'<div class="miniPArticle">' + 
 											'<h3>' + Article.article.title + '</h3>' +
-											'<p class="author">' + Article.article.author + '</p>' +
+											'<p class="author">' + Article.article.author  + " | " +
+ 											'<font color="grey">' + Article.article.date + '</font>' +'</p>' +
 											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="50px">' +
 											'<p>' + Article.article.description + '</p>' +
 											'</div>' +
@@ -36,7 +37,8 @@ $(document).ready(function() {
 		    	$('div .ocolumn').append('<a href="html/article_page.html?article='+ Article.article.file +'">' +
 		    								'<div class="miniOArticle">' +
 											'<h3>' + Article.article.title + '</h3>' +
-											'<p class="author">' + Article.article.author + '</p>' +
+											'<p class="author">' + Article.article.author  + " | " +
+ 											'<font color="grey">' + Article.article.date + '</font>' +'</p>' +
 											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="100px">' +
 											'<p>' + Article.article.description + '</p>' +
 											'</div>' + 
@@ -50,7 +52,8 @@ $(document).ready(function() {
 		    	$('div .scolumn').append('<a href="html/article_page.html?article='+ Article.article.file +'">' +
 											'<div class="miniSArticle">' +
 											'<h3>' + Article.article.title + '</h3>' +
-											'<p class="author">' + Article.article.author + '</p>' +
+											'<p class="author">' + Article.article.author  + " | " +
+ 											'<font color="grey">' + Article.article.date + '</font>' +'</p>' +
 											'<img class="miniThumb" src="'+ Article.article.image +'" alt="" height="50px">' +
 											'<p>' + Article.article.description + '</p>' +
 											'</div>' + 
