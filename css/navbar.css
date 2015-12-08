@@ -27,7 +27,7 @@
 }
 
 #header {
-    z-index: 2;
+    z-index: 5;
 	position: fixed;
 	width: 900px;
 	margin-left: auto;
