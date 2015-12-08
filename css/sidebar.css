@@ -3,10 +3,6 @@
 @import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 
-.sidebarThumb {
-    float: left;
-    margin: 10px;
-}
 
 .vertical-text {
     -webkit-transform: rotate(-90deg);
@@ -49,7 +45,7 @@
 #sidebar_toggle_wrapper{
     position: fixed;
     margin-top: 300px;
-	right: 0px;
+    right: 0px;
     width: 30px;
     height: 160px;
     -webkit-transition: all 0.5s ease;
@@ -137,6 +133,7 @@
 }
 
 .sidebar-stub {
+    overflow:hidden;
     color:black;
 }
 
@@ -171,6 +168,10 @@
     background-color: none;
 }
 
+.sidebarThumb {
+    float: left;
+    margin: 5px;
+}
 
 
 
