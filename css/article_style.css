@@ -57,3 +57,25 @@
 .description{
 	font-style:italic;
 }
+
+.left-button{
+	left:-61px;
+}
+.right-button{
+}
+.pageButton {
+	position: fixed;
+	
+    margin-top: 375px;
+    background-color: #D8DBDF;
+    -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+#leftArticle {
+	margin-left: 1%;
+}
+#rightArticle {
+	margin-left: 95%;
+	margin-right: 1%;
+}
