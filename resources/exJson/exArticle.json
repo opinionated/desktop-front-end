@@ -9,6 +9,7 @@
 			"imageCaption"	: "A thing happened -yo mama",
 			"body"			: "adsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsfadsfasdf asdfasdf;lkjasd;lfkjasdf asdf;lkj adsf",
 			"file"			: "exArticle.json",
+			"template"		: "top",
 			"similarArticles" : ["exArt1.json","exArt2.json","exArt3.json"]
 	}
 }

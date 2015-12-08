@@ -3,6 +3,11 @@
 @import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 
+.similarThumb {
+    float: left;
+    margin: 2px;
+}
+
 .vertical-text {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
