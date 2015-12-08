@@ -1,5 +1,5 @@
-@import url('http://getbootstrap.com/dist/css/bootstrap.css');
-@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+/*@import url('http://getbootstrap.com/dist/css/bootstrap.css');*/
+/*@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");*/
 @import 'sidebar.css';
 @import 'navbar.css';
 @import 'footer.css';
@@ -14,12 +14,24 @@
 }
 
 #article-photo-wrapper{
-	float: left;
 	padding: 20px;
 	padding-right:30px;
 }
 
+.right-template{
+	float: right;
+}
+
+.left-template{
+	float: left;
+}
+
+
 #article-photo{
+
+}
+
+#article-header{
 
 }
 
@@ -34,7 +46,7 @@
 
 .author {
 	font-size: 12px;
-	float: right;
+	/*float: right;*/
 }
 
 .date{
