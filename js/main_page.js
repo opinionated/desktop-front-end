@@ -47,8 +47,8 @@ $(document).ready(function() {
 		    });
 		}
 		//handle sports articles
-		for (var i = 0; i < data.articles.opinion.length; i++) {
-		    pullFile("resources/exJson/" + data.articles.opinion[i], function(Article){
+		for (var i = 0; i < data.articles.sports.length; i++) {
+		    pullFile("resources/exJson/" + data.articles.sports[i], function(Article){
 		    	$('div .scolumn').append('<a href="html/article_page.html?article='+ Article.article.file +'">' +
 											'<div class="miniSArticle">' +
 											'<h3>' + Article.article.title + '</h3>' +
