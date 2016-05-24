@@ -1,24 +1,24 @@
 // mainPage.js
 $(document).ready(function() {
 
-	pullFile("resources/exJson/exMain.json",function(data){
+	pullFile("resources/exJson/exMain.json", function(data) {
 		//handle main article
 		pullFile("resources/exJson/" + data.articles.main, function(mainArticle){
-			console.log(mainArticle);
-			$('div .bigArticle').append('<div class="bigThumb"><img src="'+ mainArticle.article.image +'" alt="" height="140px">' +
-										'<p class="author">' + mainArticle.article.imageCaption + '</p></div>' +
-										'<h2>'+ mainArticle.article.title +'</h2>' +
-										'<p class="author">' + mainArticle.article.author +  " | " + '<font color="grey"> ' + mainArticle.article.date + '</font>' + '</p>' +
-										'<p>' + mainArticle.article.description + '</p>' + 
-										'<a href="html/article_page.html?article='+ data.articles.main +'"></a>'
-			).click(function () {
-        		window.location = $(this).find("a:first").attr("href");
-		        return false;
-    		});
+				$('div .bigArticle').append('<div class="bigThumb"><img src="'+ mainArticle.article.image +'" alt="" height="140px">' +
+											'<p class="author">' + mainArticle.article.imageCaption + '</p></div>' +
+											'<h2>'+ mainArticle.article.title +'</h2>' +
+											'<p class="author">' + mainArticle.article.author +  " | " + '<font color="grey"> ' + mainArticle.article.date + '</font>' + '</p>' +
+											'<p>' + mainArticle.article.description + '</p>' + 
+											'<a href="html/article_page.html?article='+ data.articles.main +'"></a>'
+				).click(function () {
+	        		window.location = $(this).find("a:first").attr("href");
+			        return false;
+	    		});
 		});
 		//handle politics articles
 		for (var i = 0; i < data.articles.politics.length; i++) {
 		    pullFile("resources/exJson/" + data.articles.politics[i], function(Article){
+		    	// console.log(Article.article.tag);
 		    	$('div .pcolumn').append('<a href="html/article_page.html?article='+ Article.article.file +'">' +
 		    								'<div class="miniPArticle">' + 
 											'<h3>' + Article.article.title + '</h3>' +
