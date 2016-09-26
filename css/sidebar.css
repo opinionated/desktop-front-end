@@ -2,8 +2,6 @@
 @import url('http://getbootstrap.com/dist/css/bootstrap.css');
 @import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
-
-
 .vertical-text {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -36,12 +34,8 @@
 
 /*Sidebar button*/
 .sidebar-button-text {
-
-    /*width: 50%;*/
     font-size: 15px;
     margin-top: 93px;
-    /*margin-left: 5px;*/
-
 }
 
 #sidebar_toggle_wrapper > .btn{
@@ -77,8 +71,6 @@
     height: 100%;
 }
 
-
-
 /*Sidebar/Wrapper description*/
 #wrapper {
     z-index: 1;
@@ -95,7 +87,6 @@
     padding-right: 300px;
 }
 
-
 #sidebar-wrapper {
     z-index:100;
     position: fixed;
@@ -110,18 +101,13 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     border-left: none;
-/*    border-size:1px;
-    border-color:rgba(220, 220, 220, 0.8);
-*/    background-color: #F4F5F6;
+    background-color: #F4F5F6;
 
 }
-
 
 #wrapper.toggled #sidebar-wrapper {
     width: 300px;
 }
-
-
 
 /* Sidebar Styles */
 
@@ -132,10 +118,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
-    /*text-indent: 10px;*/
-    /*line-height: 10px;*/
-
     display: block;
     text-decoration: none;
     color: black;
@@ -168,6 +150,20 @@
     padding-left: 5px;
 }
 
+.sidebar-nav > .sidebar-brand p{
+    height: 60px;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
 .sidebar-nav > .sidebar-brand a{
     color: black;
 }
@@ -191,12 +187,9 @@
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    /*height: 50px;*/
 }
 
 .stubTitle {
-    /*text-indent: 10px;*/
-
     font-size: 17px;
     margin-top: 10px;
     margin-left: 10px;
@@ -206,8 +199,6 @@
 }
 
 .stubAuthor {
-    /*text-indent: 10px;*/
-
     font-size: 10px;
     margin-top: 0px;
     padding-top: 0px;
@@ -223,7 +214,3 @@
     padding-top: 0px;
     margin-right: 0px;
 }
-
-
-
-

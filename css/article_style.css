@@ -14,10 +14,6 @@
 	padding-bottom:50px;
 }
 
-#article-photo-wrapper{
-	
-}
-
 .right-template{
 	padding-left:30px;
 	float: right;
@@ -35,14 +31,6 @@
 	text-align: center;
 }
 
-#article-photo{
-
-}
-
-#article-header{
-
-}
-
 #article-photo-caption{
 	font-size:12;
 }
@@ -54,7 +42,6 @@
 
 .author {
 	font-size: 12px;
-	/*float: right;*/
 }
 
 .date{
@@ -68,11 +55,10 @@
 .left-button{
 	left:-61px;
 }
-.right-button{
-}
+
 .pageButton {
 	position: fixed;
-	
+
     margin-top: 375px;
     background-color: #D8DBDF;
     -webkit-border-radius: 0 !important;
