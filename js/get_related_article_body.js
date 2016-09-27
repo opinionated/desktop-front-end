@@ -6,6 +6,9 @@ $(document).ready(function() {
 	var main_article = query["main_article"];
 
 	pullFile("../resources/exJson/" + article_name, function(article){
+
+		document.title = article.article.title;
+
 		$('#article-header').append('<h2>'+ article.article.title +'</h2>' +
 									'<p class="author">' + article.article.author  + " | " +
  									'<font color="grey">' + article.article.date + '</font>' + '</p>');
@@ -53,7 +56,6 @@ function populateSidebar(files, root){
 	// });
 
 	$("#mainLink").attr("href", "article_page.html?article="+root);
-
 	for(var i=0; i<files.length; i++){
 		if(root == files[i]) continue;
 		pullFile("../resources/exJson/" + files[i], function(Article){
@@ -63,9 +65,8 @@ function populateSidebar(files, root){
 								                		'<div class="stubTitle">' + Article.article.title + '</div>' +
 								                		'<div class="stubAuthor">' + Article.article.author + '</div>' +
 								                		'<div class="stubAuthor">' + Article.article.date + '</div>' +
-								                		'</a>' +
 								                		'<p class="stubDesc"><em>'+ Article.article.description +'</em></p>' +
-													'</li>'
+														'</a>' + '</li>'
 			);
 		});
 	}

@@ -41,8 +41,8 @@
     background-color: #D8DBDF;
     border:none;
     -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
     border-right: solid;
     border-color: #CACED3;
 }

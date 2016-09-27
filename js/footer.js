@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('#footer').append('<ul id="footer_bar">\
 			<li><a href="index.html" class="btn_ft">Contact</a></li>\
 			<li><a href="index.html" class="btn_ft">About</a></li>\
-			<li><a id="bobd" class="btn_ft">Bob Dylan</a></li>\
+			<li><a id="bobd" class="btn_ft" style="cursor:pointer">Bob Dylan</a></li>\
 			<li><a href="index.html" class="btn_ft">Donate</a></li>\
 			<li><a href="index.html" class="btn_ft">Privacy</a></li>\
 			<li><a href="index.html" class="btn_ft">Terms of Service</a></li>\

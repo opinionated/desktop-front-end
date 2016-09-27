@@ -6,6 +6,8 @@ $(document).ready(function() {
 
     pullFile("../resources/exJson/" + article_name, function(article) {
 
+        document.title = article.article.title;
+
         $('#article-header').append('<h2>' + article.article.title + '</h2>' +
             '<p class="author">' + article.article.author + " | " +
             '<font color="grey">' + article.article.date + '</font>' + '</p>');
@@ -48,9 +50,8 @@ function populateSidebar(files, root) {
                 '<div class="stubTitle">' + Article.article.title + '</div>' +
                 '<div class="stubAuthor">' + Article.article.author + '</div>' +
                 '<div class="stubAuthor">' + Article.article.date + '</div>' +
-                '</a>' +
-                '<p class="stubDesc"><em>' + Article.article.description + '</em></p>' +
-                '</li>'
+                '<p class="stubDesc"> <em>' + Article.article.description + '</em> </p>' +
+                '</a>' + '</li>'
             );
         });
     }
