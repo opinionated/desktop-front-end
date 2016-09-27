@@ -1,75 +1,68 @@
 <HTML>
+	<HEAD>
+		<link rel="stylesheet" type="text/css" href="../css/article_style.css">
 
-<HEAD>
-	<link rel="stylesheet" type="text/css" href="../css/article_style.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="../js/header_Article.js"></script>
+        <script src="../js/get_related_article_body.js"></script>
+        <script src="../js/footer.js"></script>
 
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="../js/header_Article.js"></script>
-	<script src="../js/get_related_article_body.js"></script>
-	<script src="../js/footer.js"></script>
+	</HEAD>
 
-</HEAD>
+	<BODY>
+		<!-- <a href="#"> <div class="pageButton reverse-vertical-text btn left-button" id="leftArticle">left</div></a> -->
 
-<BODY>
-	<!-- <a href="#"> <div class="pageButton reverse-vertical-text btn left-button" id="leftArticle">left</div></a> -->
-	<div id="wrapper">
+		<div id = "wrapper">
 
-		<div id="sidebar-wrapper">
+			<div id = "sidebar-wrapper">
+				<ul id="related" class="sidebar-nav">
+					<li class="sidebar-brand main-link">
+                		<a id="mainLink">Back to Main Article</a>
+					</li>
+					<li class="sidebar-brand">
+                		<a href="#">Related Articles</a>
+					</li>
+				</ul>
 
-			<ul id="related" class="sidebar-nav">
-				<li class="sidebar-brand main-link">
-					<a id="mainLink" href="">Back to Main Article</a>
-				</li>
-				<li class="sidebar-brand">
-					<id="related">Related Articles</>
-				</li>
-			</ul>
+			</div>
+			<div id="sidebar_toggle_wrapper">
+				<a href="#menu-toggle" class="btn btn-default menu_toggle btn-block" id="menu-toggle">
+					<div class = "vertical-text sidebar-button-text">
+						similar articles
+					</div>
+				</a>
+				<!--<a href="#"><div class="pageButton vertical-text btn right-button" id="rightArticle">right</div></a>-->
+			</div>
 
 		</div>
-		<div id="sidebar_toggle_wrapper">
-			<a href="#menu-toggle" class="btn btn-default menu_toggle btn-block" id="menu-toggle">
-				<div class="vertical-text sidebar-button-text">
-					similar articles
+		<div id="outerHead"><a href="../index.html"><div id="header"></div></a></div>
+		<div id="article-wrapper">
+			<div id="article-header">
+			</div>
+			<div id="article-photo-wrapper">
+				<div id="article-photo">
+
 				</div>
-			</a>
-			<!--<a href="#"><div class="pageButton vertical-text btn right-button" id="rightArticle">right</div></a>-->
-		</div>
+				<div id="article-photo-caption">
 
-	</div>
-	<div id="outerHead">
-		<a href="../index.html">
-			<div id="header"></div>
-		</a>
-	</div>
-	<div id="article-wrapper">
-		<div id="article-header">
-		</div>
-		<div id="article-photo-wrapper">
-			<div id="article-photo">
+				</div>
 
 			</div>
-			<div id="article-photo-caption">
+
+			<div id="article-body">
 
 			</div>
 
 		</div>
+		<script src = "../js/article_sidebar.js"> </script>
 
-		<div id="article-body">
+	</BODY>
 
-		</div>
-
-	</div>
-	<script src="../js/article_sidebar.js">
-	</script>
-
-</BODY>
-
-<footer>
-	<div id="footer"></div>
-</footer>
-
+		<footer>
+			<div id="footer"></div>
+		</footer>
 </HTML>

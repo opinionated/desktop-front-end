@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	//GET ARTICLE
 
-
 	var query = parseQuery(document.location.search);
 	var article_name = query["article"];
 	var main_article = query["main_article"];
