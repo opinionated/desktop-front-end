@@ -50,20 +50,25 @@ $(document).ready(function() {
 });
 
 function populateSidebar(files, root) {
-
-    for (var i = 0; i < files.length; i++) {
-        pullFile("../resources/exJson/" + files[i], function(Article) {
-            $("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
-                '<img class="sidebarThumb" src="' + Article.article.image + '" alt="" height="70px" width="70px">' +
-                '<a href="related_article_page.html?article=' + Article.article.file + '&main_article=' + root + '">' +
-                '<div class="stubTitle">' + Article.article.title + '</div>' +
-                '<div class="stubAuthor">' + Article.article.author + '</div>' +
-                '<div class="stubAuthor">' + Article.article.date + '</div>' +
-                '<p class="stubDesc"> <em>' + Article.article.description + '</em> </p>' +
-                '</a>' + '</li>'
-            );
-        });
-    }
+    pullFile("../resources/fullJSON.json", function(Article) {
+        var jsonF = JSON.parse(JSON.stringify(Article));
+        var jsonFArticles = JSON.parse(JSON.stringify(jsonF.article));
+        for (var i = 0; i < files.length; i++) {
+            for (var j = 0; j < jsonFArticles.length; j++) {
+                if (jsonFArticles[j].file == files[i]) {
+                    $("#sidebar-wrapper .sidebar-nav").append('<li class="sidebar-stub">' +
+                        '<img class="sidebarThumb" src="' + jsonFArticles[j].image + '" alt="" height="70px" width="70px">' +
+                        '<a href="related_article_page.html?article=' + jsonFArticles[j].file + '&main_article=' + root + '">' +
+                        '<div class="stubTitle">' + jsonFArticles[j].title + '</div>' +
+                        '<div class="stubAuthor">' + jsonFArticles[j].author + '</div>' +
+                        '<div class="stubAuthor">' + jsonFArticles[j].date + '</div>' +
+                        '<p class="stubDesc"> <em>' + jsonFArticles[j].description + '</em> </p>' +
+                        '</a>' + '</li>'
+                    );
+                }
+            }
+        }
+    });
 }
 
 function pullFile(path, cb) {
