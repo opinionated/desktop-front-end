@@ -4,14 +4,14 @@ $(document).ready(function() {
     //handle main article
     $.getJSON('resources/fullJSON.json', function(data) {
         var jsonF = JSON.parse(JSON.stringify(data));
-        var jsonFArticles = JSON.parse(JSON.stringify(jsonF.article))
-        console.log(jsonFArticles);
+        var jsonFArticles = JSON.parse(JSON.stringify(jsonF.article));
+        console.log(jsonFArticles[0].description);
         $('div.bigArticle').append('<div class="bigThumb"><img src="' + jsonFArticles[0].image + '" alt="" height="140px">' +
             '<p class="author">' + jsonFArticles[0].imageCaption + '</p></div>' +
             '<h2>' + jsonFArticles[0].title + '</h2>' +
             '<p class="author">' + jsonFArticles[0].author + " | " + '<font color="grey"> ' + jsonFArticles[0].date + '</font>' + '</p>' +
             '<p>' + jsonFArticles[0].description + '</p>' +
-            '<a href="html/article_page.html?article=' + jsonFArticles[0].main + '"></a>'
+            '<a href="html/article_page.html?article=' + jsonFArticles[0].file + '"></a>'
         ).click(function() {
             window.location = $(this).find("a:first").attr("href");
             return false;
