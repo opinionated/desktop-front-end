@@ -27,6 +27,7 @@
 }
 
 #header {
+	font-size: 100px;
     z-index: 5;
 	position: fixed;
 	width: 900px;
@@ -56,4 +57,8 @@ color: #000000;
 
 #outerHead a:hover {
 color: #000000;
+}
+
+#clickable {
+	text-decoration: none;
 }

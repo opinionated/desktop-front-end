@@ -1,11 +1,14 @@
 // mainPage.js
 $(document).ready(function() {
 
+    $("#logo").click(function() {
+        alert("bih");
+    });
+
     //handle main article
     $.getJSON('resources/fullJSON.json', function(data) {
         var jsonF = JSON.parse(JSON.stringify(data));
         var jsonFArticles = JSON.parse(JSON.stringify(jsonF.article));
-        console.log(jsonFArticles[0].description);
         $('div.bigArticle').append('<div class="bigThumb"><img src="' + jsonFArticles[0].image + '" alt="" height="140px">' +
             '<p class="author">' + jsonFArticles[0].imageCaption + '</p></div>' +
             '<h2>' + jsonFArticles[0].title + '</h2>' +
