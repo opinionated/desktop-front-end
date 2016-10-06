@@ -1,10 +1,6 @@
 // mainPage.js
 $(document).ready(function() {
 
-    $("#logo").click(function() {
-        alert("bih");
-    });
-
     //handle main article
     $.getJSON('resources/fullJSON.json', function(data) {
         var jsonF = JSON.parse(JSON.stringify(data));
