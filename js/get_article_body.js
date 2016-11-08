@@ -4,7 +4,6 @@ $(document).ready(function() {
     var query = parseQuery(document.location.search);
     var article_name = query["article"];
 
-    // pullFile("../resources/exJson/" + article_name, function(article) {
     pullFile("../resources/fullJSON.json", function(article) {
         var jsonF = JSON.parse(JSON.stringify(article));
         var jsonFArticles = JSON.parse(JSON.stringify(jsonF.article));
@@ -33,7 +32,7 @@ $(document).ready(function() {
 
         $('#article-photo-caption').append(thisarticle.imageCaption);
         $('#article-body').append('<br><p class="description">' + thisarticle.description + '</p>' +
-            '<p>' + thisarticle.body + '</p>'
+            '<p id="body">' + thisarticle.body + '</p>'
         );
 
 

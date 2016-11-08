@@ -178,6 +178,18 @@
     background-color: #8f9ea6;
 }
 
+.sidebar-nav li {
+    padding: 0px;
+}
+
+.sidebar-nav li a {
+    margin: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
 .sidebarThumb {
     float: left;
     margin-left: 5px;

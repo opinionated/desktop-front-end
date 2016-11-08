@@ -1,0 +1,20 @@
+.navbar-static-top {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+.navbar-static-bottom {
+    background-color: white;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+
+.navbar-collapse {
+    text-align:center;
+    font-size: 18px;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+}
