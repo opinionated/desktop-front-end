@@ -43,13 +43,19 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: left;
+  /*text-align: left;*/
   background-color: white;
   border: 1px solid #e5e5e5;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .jumbotron .btn {
   font-size: 21px;
+}
+
+.jumbotron .body {
+    /*margin-right: 5px;*/
 }
 
 .container .jumbotron {
@@ -70,8 +76,14 @@ body {
   margin-top: 0px;
   margin-bottom: 15px;
   border-radius: 10px;
+  min-width: 250px;
 }
 
+.col-lg-4 .article {
+    display: inline-block;
+    /*min-height: 250px;*/
+    /*height: inherit;*/
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
