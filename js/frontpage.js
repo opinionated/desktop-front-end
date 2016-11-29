@@ -162,19 +162,19 @@ $(document).ready(function() {
                     }
                 }
             }
-            if (jsonFArticles[jsonFArticles.length-1].image != "") {
-                $("#everythingElse").append('<a href="html/article_page.html?article=' + jsonFArticles[jsonFArticles.length-1].file + '" style="color: #333; text-decoration: none;"> <div class="jumbotron"><h2>' + jsonFArticles[jsonFArticles.length-1].title + '</h2>' +
-                    '<p class="author">' + jsonFArticles[jsonFArticles.length-1].author + ' | ' + '<font color="grey"> ' + jsonFArticles[jsonFArticles.length-1].date + '</font></p>' +
-                    '<p> <img style="float:center;"style="float:left; margin: 5px 15px 5px 0px;" src="' + jsonFArticles[jsonFArticles.length-1].image + '" alt="" width="140px">' + jsonFArticles[jsonFArticles.length-1].description + '</p>' +
-                    '</a>'
+            if (jsonFArticles[jsonFArticles.length-2].image != "") {
+                $("#everythingElse").append('<a href="html/article_page.html?article=' + jsonFArticles[jsonFArticles.length-2].file + '" style="color: #333; text-decoration: none;"> <div class="jumbotron"><h2>' + jsonFArticles[jsonFArticles.length-2].title + '</h2>' +
+                    '<p class="author">' + jsonFArticles[jsonFArticles.length-2].author + ' | ' + '<font color="grey"> ' + jsonFArticles[jsonFArticles.length-2].date + '</font></p>' +
+                    '<p class="body"> <img style="float:right; margin: 5px 5px 5px 15px;"" src="' + jsonFArticles[jsonFArticles.length-2].image + '" alt="" height="225px">' +
+                        jsonFArticles[jsonFArticles.length-2].description + '</p> </a> </div>'
                 ).click(function() {
                 });
             }
             else {
-                $("#everythingElse").append('<a href="html/article_page.html?article=' + jsonFArticles[jsonFArticles.length-1].file + '" style="color: #333; text-decoration: none;"> <div class="jumbotron"><h2>' + jsonFArticles[jsonFArticles.length-1].title + '</h2>' +
-                    '<p class="author">' + jsonFArticles[jsonFArticles.length-1].author + ' | ' + '<font color="grey"> ' + jsonFArticles[jsonFArticles.length-1].date + '</font></p>' +
-                    '<p>' + jsonFArticles[jsonFArticles.length-1].description + '</p>' +
-                    '</a>'
+                $("#everythingElse").append('<a href="html/article_page.html?article=' + jsonFArticles[jsonFArticles.length-2].file + '" style="color: #333; text-decoration: none;"> <div class="jumbotron"><h2>' + jsonFArticles[jsonFArticles.length-2].title + '</h2>' +
+                    '<p class="author">' + jsonFArticles[jsonFArticles.length-2].author + ' | ' + '<font color="grey"> ' + jsonFArticles[jsonFArticles.length-2].date + '</font></p>' +
+                    '<p class="body">' + jsonFArticles[jsonFArticles.length-2].description +
+                    '</p> </a> </div>'
                 ).click(function() {
                 });
             }
