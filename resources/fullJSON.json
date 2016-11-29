@@ -140,6 +140,20 @@
 			"template"		: "top",
 			"similarArticles" : ["exArticle.json", "exArt1.json"],
 			"tag" : ["Entertainment"]
+			},
+			{
+			"title" 		: "Ted Cruz tries to downplay comments questioning Donald Trump’s ‘judgment,’ but not before Trump fires back on Twitter ",
+			"description"	: "Ted Cruz, who just a few weeks ago was called a potential vice presidential pick for Donald Trump, tried to downplay a story that reveals he questioned the 'judgment' of the billionaire blowhard.",
+			"author"		: "CAMERON JOSEPH",
+			"date"			: "2015-12-11",
+			"link"			: "http://www.nydailynews.com/news/politics/ted-cruz-downplay-comments-trump-judgment-article-1.2462760",
+			"image"			: "http://assets.nydailynews.com/polopoly_fs/1.2462759.1449850052!/img/httpImage/image.jpg_gen/derivatives/article_970/gop-2016-cruz.jpg?enlarged",
+			"imageCaption"	: "PABLO MARTINEZ MONSIVAIS/AP",
+			"body"			: "WASHINGTON — The gloves are finally off between Ted Cruz and Donald Trump, even if Cruz would rather have kept them on. After the Texas senator got caught on tape criticizing Trump's 'judgment' at a private fund-raiser, the divisive billionaire took aim at the man he said weeks ago could be his vice presidential pick. Cruz is trying to downplay the slight, but Trump is already snarling. 'Looks like @tedcruz is getting ready to attack. I am leading by so much he must. I hope so, he will fall like all others. Will be easy!' Trump tweeted Friday morning. Cruz has assiduously worked not to offend Trump throughout the campaign, seeking to keep a detente going and positioning himself for some of inflammatory mogul's voters. But in a closed-door meeting he questioned Trump's 'judgment' and readiness to be commander-in-chief, after admitting that he's looked to 'bear hug' Trump and Carson during the race. 'Who am I comfortable having their finger on the button? Now that's a question of strength, but it's also a question of judgment. And I think that is a question that is a challenging question for both of them,' Cruz said about Trump and Ben Carson, according to audio obtained by the New York Times. Cruz downplayed the story as a 'New York Times report with anonymous sources,' even though the audio of his comments was posted with the story — a sign he's still not ready to fully engage. But Trump doesn't let disses go — even mild, private ones. Cruz could be the next target on his game of presidential whack-a-mole.",
+			"file"			: "exArt8.json",
+			"template"		: "top",
+			"similarArticles" : ["exArticle.json", "exArt1.json"],
+			"tag" : ["Entertainment"]
 			}
 		]
 }
